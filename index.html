@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- This Web page layout is highly inspired by url: http://www.pascalvangemert.nl/#/profile -->
+<!-- Encountered Pascal's webpage while I was taking the Udemy Course on WebDev. -->
+<!-- The main.css file is a bit disorganized. Need to improve placement of elements  -->
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Miguel Co">
+        <meta name="Description"
+            content="This page is a trial webpage that's all about me; education, work experience, and my abilities.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Webpage title and favicon -->
+        <title>Miguel Co-Interactive About Me Page</title>
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <!-- Bootstrap CSS dependency -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- External CSS -->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+
+    <body>
+        <!-- Start of Landing Section -->
+        <div id="backGroundLay">
+            <!-- Landing Animation/Illustration. -->
+            <!-- Was hoping to make this fixed background pic with an overlay, but taking too much time for me to -->
+            <!-- find the proper solution/code. Went with a scrolling positioned GIF instead. -->
+            <img class="img-fluid2" src="/images/giphy.gif" alt="Coding GIF">
+            <div class="landingDetailsDiv">
+                <h1 class="landingH1">Miguel Lorenzo Co</h1>
+                <hr class="landingHr">
+                <h2 class="landingH2">Interactive Webpage About Me</h2>
+            </div>
+        </div>
+        <!-- End of Landing Section. -->
+
+        <!-- Start of Responsive Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- Takes user back to the Start of #Profile Section -->
+                        <a class="nav-link" href="#Profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Takes user back to the Start of #Experience Section -->
+                        <a class="nav-link" href="#Experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Takes user back to the Start of #Abilities Section -->
+                        <a class="nav-link" href="#Abilities">Abilities</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Responsive Navbar -->
+
+        <!-- Fixed Bottom Navbar -->
+        <nav class="navbar navbar-dark bg-light fixed-bottom">
+            <a class="navbar-brand" href="#backGroundLay">
+                <img src="/images/arrowUp.png" width="30" height="30" alt="Go to Top">
+            </a>
+        </nav>
+        <!-- End of Fixed Bottom Navbar -->
+
+        <!-- Start of Section 1: My Profile -->
+        <section id="Profile">
+            <div style="max-width: 50%;">
+                <h2>Profile</h2>
+                <p>Capacity Management Engineer in the Satellite Communications Industry</p>
+            </div>
+            <hr>
+            <div class="aboutMe" style="max-width: 50%">
+                <h2>About me</h2>
+                <p>
+                    I'm a SatComms Engineer for about 3 years now. And I'm currently transition my career into Tech.
+                    More
+                    specifically Web Development; by learning <em>HTML, CSS, Bootstrap, Javascript, MongoDB, React, and
+                        Node.Js
+                    </em>. It's a bit overwhelming but I try to take it one-step at a time. I've recently bought a
+                    <a href="https://www.udemy.com/" target="_blank"
+                        rel="noopener noreferrer"><strong>udemy</strong></a> course by Dr. Angela Yu: "<em>The
+                        Complete 2022 Web
+                        Development Bootcamp</em>" while simutaenously
+                    supplementing it
+                    with <a href="https://www.youtube.com/c/Freecodecamp" target="_blank"
+                        rel="noopener noreferrer"><strong>freeCodeCamp.org</strong></a> videos on YouTube. I've gone
+                    through
+                    about 60 hours of materials on HTML, CSS, and a bit of functional Javascript.
+                </p>
+                <img src="https://pbs.twimg.com/profile_images/1292813569424101376/SgrYFmqn_400x400.jpg"
+                    alt="My picture" height="250" width="250" class="img-fluid">
+
+                <h2>Details</h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <br>
+                    Miguel Lorenzo Co
+                    <br>
+                    <strong>Age:</strong>
+                    <br>
+                    25 years
+                    <br>
+                    <strong>Location:</strong>
+                    <br>
+                    Tarlac, Philippines
+                </p>
+                <div class="twitterButton">
+                    <a href="https://twitter.com/SuperMiiguel?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-size="large" data-show-screen-name="false" data-show-count="false">Follow @SuperMiiguel</a>
+                </div>
+
+
+            </div>
+        </section>
+        <br>
+        <!-- End of Section 1: My Profile -->
+
+        <!-- Start of Section 2: Experiences -->
+        <section id="Experiences">
+            <div style="max-width: 50%;">
+                <h2>Experiencies</h2>
+            </div>
+
+            <hr>
+
+            <div class="Educations" style="max-width: 50%">
+                <h3>Education</h3>
+                <br>
+                <dt>Kalibrr x Zuitt: Basic Web Profile Coding Workshop </dt>
+                <dd><a href="/images/Zuitt Cert.png" target="_blank" rel="noopener noreferrer">HTML-CSS-Bootstrap
+                        Workshop - 2022</a></dd>
+                <br>
+                <dt>Udemy - Dr. Angela Yu: The Complete 2022 Web Development Bootcamp </dt>
+                <dd>WebDev Bootcamp - Ongoing</dd>
+                <br>
+                <dt><a href="https://www.ust.edu.ph/" target="_blank" rel="noopener noreferrer">University of Santo
+                        Tomas</a>, Philippines</dt>
+                <dd>B.Sc. Electronics Engineering - Batch 2018</dd>
+                <br>
+                <dt>Tarlac State University - Laboratory High School, Philippines</dt>
+                <dd>Diploma - Math and Science Curriculum - Batch 2013</dd>
+                <br>
+            </div>
+            <hr>
+            <div class="Career" style="max-width: 50%">
+                <h3>Career <a href="https://linkedin.com/in/miguel-lorenzo-co" target="_blank"
+                        rel="noopener noreferrer"><i class="fa fa-linkedin-square"
+                            style="font-size:36px;color:#0072b1"></i></a>
+                </h3>
+                <br>
+                <dt>Satellite Capacity Management Engineer</dt>
+                <dd><em><a href="https://absatellite.com/" target="_blank" rel="noopener noreferrer">ABS Global
+                            Ltd.</em></a>
+                    2019-Present</dd>
+                <br>
+
+
+
+
+
+                <br>
+            </div>
+            <br>
+
+
+
+
+
+        </section>
+
+        <!-- End of Section 2: Experiences -->
+
+        <!-- Start of Section 3: Abilities -->
+        <section id="Abilities">
+            <div style="max-width: 50%;">
+                <h2>Abilities</h2>
+            </div>
+
+            <hr>
+
+            <div class="skills-fluid" style="max-width: 70%">
+                <h3>Skills</h3>
+                <br>
+                <table class="table table-hover table-borderless table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- HTML -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>HTML 5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- CSS -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>CSS 3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Javascript -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Javascript</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Link Budget -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Satellite Link Budget Analysis</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Interf Analysis -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Satellite Link Interference Analaysis</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h3>Languages</h3>
+                <br>
+                <table class="table table-hover table-borderless table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filipino -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Filipino</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- English -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>English</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex; align-content: right;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <h3>Tools</h3>
+                <br>
+                <table class="table table-hover table-borderless table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- MS Office -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>MS Office</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Google Chrome -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Google Chrome</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex; align-content: right;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Filmora Video -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Wondershare Filmora X</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex; align-content: right;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Adobe Photoshop -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Adobe Photoshop</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex; align-content: right;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- MS VSCode -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>VSCode</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex; align-content: right;">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Git/GitBash -->
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Git/GitBash</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="star">
+                                <span style="display: inline-flex; align-content: right;">
+                                    <img src="/images/star.png" alt="star">
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br>
+            </div>
+            <hr>
+
+            <br>
+
+
+
+
+
+        </section>
+        <br>
+        <!-- End of Section 3: Abilities -->
+
+
+
+        <!-- Bootstrap JS dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+
+        <!-- Twitter JS dependency -->
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+
+
+    </body>
+
+</html>
